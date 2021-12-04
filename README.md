@@ -1,4 +1,4 @@
-# discord.js-v13-for-replit
+# Discord.js v13 for replit
 A discord.js v13 bot set up for replit
 
 # How to use Discord.js v13 in Replit?

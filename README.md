@@ -34,9 +34,7 @@ Add a new environment secret for the bot token.
 
  <br>
   <br>
-   <br>
-    <br>
-     <br>
+   </br>
 ## Updating Node.js v12 to Node.js v16 in Replit
 
 Execute this script on the shell to install node.js v16:

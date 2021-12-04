@@ -14,11 +14,9 @@ const client = new Client({
     intents: 32767,
 });
 
-module.exports = client;
-
 const config = require('./config.json')
 const prefix = config.prefix
-const token = process.env.token
+const token = config.token
 
 
 client.on("ready", () => {

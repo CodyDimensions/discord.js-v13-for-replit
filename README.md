@@ -6,6 +6,30 @@ A discord.js v13 bot set up for replit
 
 # How to use Discord.js v13 in Replit?
 
+### Code for the discord bot
+```
+const { Client, Message, MessageEmbed } = require('discord.js')
+const client = new Client({
+    partials: ["MESSAGE", "CHANNEL", "REACTION"],
+    intents: 32767,
+});
+
+module.exports = client;
+
+const config = require('./config.json')
+const prefix = config.prefix
+const token = process.env.token
+
+
+client.on("ready", () => {
+    console.log(`${client.user.tag} is ready!`)
+    client.user.setActivity(`${prefix}help ~ test`)
+});
+
+
+client.login(token)
+```
+
 ## Updating Node.js v12 to Node.js v16 in Replit
 
 Execute this script on the shell to install node.js v16:
@@ -29,30 +53,5 @@ If you had packages like discord.js v12 or sqlite before,please reinstall them.
 ```
 npm uninstall discord.js && npm i discord.js
 ```
-
-### Code for the discord bot
-```
-const { Client, Message, MessageEmbed } = require('discord.js')
-const client = new Client({
-    partials: ["MESSAGE", "CHANNEL", "REACTION"],
-    intents: 32767,
-});
-
-module.exports = client;
-
-const config = require('./config.json')
-const prefix = config.prefix
-const token = config.token
-
-
-client.on("ready", () => {
-    console.log(`${client.user.tag} is ready!`)
-    client.user.setActivity(`${prefix}help ~ test`)
-});
-
-
-client.login(token)
-```
-
 
 **You can run the code now!**

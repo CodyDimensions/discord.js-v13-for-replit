@@ -31,13 +31,10 @@ client.login(token)
 ```
 Create a config.json file for the prefix.
 Add a new environment secret for the bot token.
-
-
-
-
-
-
-
+</pre>
+</pre>
+</pre>
+</pre>
 ## Updating Node.js v12 to Node.js v16 in Replit
 
 Execute this script on the shell to install node.js v16:

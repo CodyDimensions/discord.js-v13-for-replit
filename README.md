@@ -1,6 +1,7 @@
 # Discord.js v13 for replit
 A discord.js v13 bot set up for replit
-(https://replit.com/)[Click here to go to replit]
+
+[Click here to go to replit](https://replit.com/)
 
 
 # How to use Discord.js v13 in Replit?
